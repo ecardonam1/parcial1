@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-warning">
+<form action="Recolectardatos.php" method="post">
+
+
+    <h1>Formulario Inscripcion del curso de paginas web, y Cobros en Linea</h1>
+
+    <h2 class="text-center">Informacion personal</h2>
+
+    <li>    <label for="Nombre">Nombre</label> <br/> </li>
+    <li>   <input type="text" name="Nombre" id="Nombre" required> <br/> </li>
+
+    <li>  <label for="Apellido">Apellido</label> <br/> </li>
+    <li>  <input type="text" name="Apellido" id="Apellido" required> <br/> </li>
+
+    <p>
+    <li>    <label for="Genero">Genero</label> <br/> </li>
+
+    <select name="Genero" id="Genero">
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+    </select>
+    </p>
+
+    <li>  <label for="Telefono">Telefono</label> <br/> </li>
+    <li> <input type="tel" pattern="[0-9]{8}" name="Telefono" id="Telefono"> <br/> </li>
+
+    <li>  <label for="Email">Email</label> <br/> </li>
+    <li>  <input type="email" name="Email" id="Email" > <br/> </li>
+    <hr/>
+
+    <li>    <label for="Pago">Tarjeta de Credito:</label> <br/> </li>
+    <input type="text" name="Tarjeta" id="Tarjeta" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}">
+    <h2 class="text-center">Informacion del Curso</h2>
+
+    <li>    <label for="NombredelCurso">Nombre del Curso</label> <br/> </li>
+   
+    <select name="NombreC" id="NombreC" >
+        <option value="Paginas web basico">Paginas web Basico</option>
+        <option value="Paginas web intermedio">Paginas web Intermedio</option>
+        <option value="Paginas web avanzado">Paginas web Avanzado</option>
+    </select>
+
+    <input type="submit" id="send" class="btn-primary" value="Enviar">
+
+
+</form>
+
+
+<script src="js/precio.js"></script>
+
+</body>
+</html>

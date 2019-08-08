@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+<select id="test">
+    <option id="uno" value="uno">uno</option>
+    <option id="dos" value="dos">dos</option>
+</select>
+<script language="JavaScript" type="text/javascript">
+    $(document).ready(function () {
+        $("#test").on('change', function () {
+            var op = $(this).val();
+            switch (op) {
+                case "dos":
+                    alert("uno");
+                    break;
+                case "uno":
+                    alert("dos");
+                    break;
+            }
+        });
+    });
+</script>
+</body>
+</html>
